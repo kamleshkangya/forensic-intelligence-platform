@@ -1,0 +1,18 @@
+# Security & Environments
+.env
+gcp-service-account.json
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Dagster & dbt artifacts
+*.egg-info/
+transform_dbt/target/
+transform_dbt/dbt_packages/
+transform_dbt/logs/
+
+# Raw Data (Don't push the heavy CSVs to GitHub)
+*.csv
